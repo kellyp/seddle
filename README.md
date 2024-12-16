@@ -9,7 +9,7 @@ Seddle makes it easy to modify text files using plain English instructions. Inst
 ## Installation
 
 ```bash
-go install github.com/yourusername/seddle@latest
+go install github.com/kellyp/seddle@latest
 ```
 
 ## Prerequisites
