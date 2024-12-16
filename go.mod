@@ -1,6 +1,6 @@
 module seddle
 
-go 1.23.4
+go 1.23
 
 require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
