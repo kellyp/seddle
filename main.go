@@ -29,7 +29,7 @@ Perform the requested update and return the updated file content.
 	// Call the OpenAI API
 	chatCompletion, err := client.Chat.Completions.New(context.TODO(), openai.ChatCompletionNewParams{
 		Messages: openai.F([]openai.ChatCompletionMessageParamUnion{
-			openai.SystemMessage("You are a helpful assistant for text processing tasks."),
+			openai.SystemMessage("You are a helpful assistant for text processing tasks. You are given a file and an instruction, and you need to update the file content based on the instruction. You should only return the updated file content, without any additional text or comments."),
 			openai.UserMessage(prompt),
 		}),
 		Model: openai.F(openai.ChatModelGPT4o),
